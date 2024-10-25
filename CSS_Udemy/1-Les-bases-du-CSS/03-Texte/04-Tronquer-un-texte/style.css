@@ -1,0 +1,19 @@
+body {
+  background: #222;
+}
+
+p {
+  margin: 100px auto 0;
+  color: #f1f1f1;
+  font-size: 24px;
+  width: 350px;
+
+  /* Pour ne plus aller à la ligne */
+  white-space: nowrap;
+
+  /* Cacher ce qui dépasse. très pratique pour faire des animations des effets / intégrations */
+  overflow: hidden;
+
+  /* Rajoute en fin de txt '...' lorsque que le texte dépasse et est caché */
+  text-overflow: ellipsis;
+}

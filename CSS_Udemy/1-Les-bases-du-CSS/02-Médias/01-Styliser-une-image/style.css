@@ -1,0 +1,45 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+img {
+  width: 100%;
+  max-width: 100%;
+
+  /* En modifiant la taille d'un coté de l'image, le second coté va être automatique modifié en gardant les bonnes proportions d'origines. */
+   width: 550px;
+
+   /* En changeant les deux coté il y aura une déformation de l'image si on ne respecte pas le bon ratio */
+   width: 450px;
+   height: 450px;
+
+   /* Pour éviter ca on peut utiliser une propriété qui ca couper des éléments de l'image afin de garder de la cohérence */
+   object-fit: cover; 
+
+   /* On peut se déplacer aussi dans l'image avec : */
+   object-position: left;
+}
+
+.hero-section {
+  /* VH est une unitée de mesure se basant sur le Viewport */
+  height: 100vh;
+  background-color: coral;
+
+  /* Importation de l'image de fond  */
+  background-image: url("./images/nature.jpg");
+
+  /* Propriété permettant de définir un endroit de l'image à garder en focus lors d'un changement de taille */
+  background-position: center;
+
+  /* Propriété visant à garder les bonnes proportions de l'image, sans déformations. (très souvent bien à mettre)*/
+  background-size: cover;
+
+  /* Pour éviter qu'une image trop petite ne se répète : */
+  background-repeat: no-repeat;
+
+  /* Il y a aussi une propiriété raccourcie pouvant gerer directement tout ça: */
+  background: coral url("./images/nature.jpg") center / cover no-repeat;
+}

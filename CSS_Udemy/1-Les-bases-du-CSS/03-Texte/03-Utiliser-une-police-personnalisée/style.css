@@ -1,0 +1,16 @@
+
+
+
+  /* ECHEC DE LA L'INTEGRATION DE LA FONT !!!! */
+
+@font-face {
+    font-family: "Monsttreal";
+    src: url("./fonts/Monsttreal.otf");
+}
+
+h1 {
+  font-family: Monsttreal, sans-serif;
+  text-align: center;
+  font-size: 150px;
+  font-weight: 200;
+}

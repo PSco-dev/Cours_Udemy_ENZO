@@ -1,0 +1,35 @@
+p {
+  background-color: royalblue;
+  color: #f1f1f1;
+  font-size: 45px;
+  /* Valeur de base pour un <p> */
+  display: block;
+
+
+  /* Transformation en ligne */
+  display: inline;
+      /* Du coup les éléments suivant ne vont pas focntionner ! */
+  /* width: 50px;
+  height: 50px;
+  margin-top: 50px; */
+  
+
+  /* Mix des deux */
+  display: inline-block;
+  /* Cette fois si les valeur suivantes vont fonctionner toute en respectant le "INLINE" */
+  width: 500px;
+  height: 250px;
+  padding: 45px;
+
+  /* Disparation visuelle, mais reste dans le DOM */
+  display: none;
+
+}
+
+span {
+  background: green;
+  color: #f1f1f1;
+  font-size: 45px;
+
+  /* On peut changer le display de tous les élémens */
+}

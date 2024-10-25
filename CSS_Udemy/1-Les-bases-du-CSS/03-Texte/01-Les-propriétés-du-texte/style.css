@@ -1,0 +1,91 @@
+body {
+  background-color: #333;
+  color: cornsilk;
+  font-family: serif;
+}
+
+/* Titre */
+
+h1{
+  text-align: center;
+  font-size: 45px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+/* Lien */
+
+a {
+
+  color: #f1f1f1;
+  
+  /* Pour changer la forme du souslignage */
+  text-decoration: underline dotted red;
+
+  /* Permet de modifier la hauteur de l'élément de décoration sous le lien */
+  text-underline-offset: 8px;
+
+  /* Modifie la Grosseur de l'élément de déco */
+  text-decoration-thickness: 10px;
+
+  text-decoration: none;
+
+  /* peut être une alternative à un lien sous-ligné. En tous les cas il doit être identifiable comme tel */
+  background: green;
+
+  /* Modifie le dessin de la souris au survol du lien */
+  cursor: zoom-in;
+}
+
+
+/* Paragraphe */
+
+  /* De base la taille est de 16px, il est déconseillé d'aller en desous de cette valeur pour l'accessibilité  */
+p{
+
+  font-size: 18px;
+  /* Gère la hauteur de ligne qui est de base sur 1.2. Cela est un rapport avec la taille de la -Font- */
+
+  line-height: 1.4;
+
+  text-transform: uppercase;
+
+    /* On évite de mettre des -text-align: justify-. Sur des gros texte la séparation entre les mots n'est pas élégante */
+    /* text-align: justify; */
+
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+  
+/* Listes */
+
+ul {
+
+    /* Permet de changer délément de déco. Même du texte est possible. */
+  list-style-type: 'Hello ';
+
+  /* permet de remplacer l'élément de décoration par une image de notre choix */
+  list-style-image: url("./ressources/basketball.svg");
+
+  /* Change la catégorie de l'élément de déco dans le -Boxing- */
+  list-style-position: outside;
+
+  /* propriété raccourcie */
+  list-style: url("./ressources/basketball.svg") outside ;
+}
+
+ol {
+  list-style-type: upper-roman;
+}
+
+ul li {
+  padding-left:  20px;
+}
+
+/* "Pseudo élément" qui va permettre de gérer notre marker d'élément de liste */
+li::marker {
+  font-size:  30px;
+}
+
+

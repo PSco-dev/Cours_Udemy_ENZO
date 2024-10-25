@@ -1,0 +1,36 @@
+body {
+  background: #f1f1f1;
+}
+
+.box {
+  height: 250px;
+  width: 250px;
+
+/* les couleurs */
+
+     /* named color */
+  background-color: pink;
+
+    /* red green blue (RGB) */
+  background-color: rgb(250, 128, 114);
+
+    /* red green blue alpha (RGBa) */
+      /* permet de rajouter l'opocité */
+  background-color: rgba(27, 19, 18, 0.5);
+
+     /* Hexadecimal [0-9][a-f] */
+      /* c'est le format de couleur le plus utilisé */
+  background-color: #ffc0cb;
+
+       /* HSL */
+        /*  permet de gérer la saturation et la luminosité. Format très peu utilisé. */
+  background-color: hsl(350, 32%, 45%);
+
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+  border: 10px solid blue;
+}
+
+
+h1 {
+  color: red;
+}

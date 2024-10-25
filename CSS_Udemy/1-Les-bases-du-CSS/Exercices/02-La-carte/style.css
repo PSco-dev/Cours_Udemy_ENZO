@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  font-family: Inter, Helvetica, sans-serif;
+  background: #ededed;
+}
+
+section .carte {
+  display: inline;
+  max-width: 60px;
+  max-height: 600px;
+  border-radius: 5px;
+}

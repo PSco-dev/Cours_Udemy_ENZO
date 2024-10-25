@@ -1,0 +1,53 @@
+p {
+  font-size: 45px;
+
+
+        /* MARGIN */
+  /* (propriétés racourcies) */
+  /* une valeur = les 4 côtés  */
+  margin: 20px;
+  /* 2 valeurs = haut-bas + droite-gauche  */
+  margin: 20px 20px;
+  /* 4 valeurs = haut-droite-bas-gauche */
+  margin: 20px 20px 20px 20px;
+  /* 3 valeurs = haut + gauche-droite + bas */
+  margin: 20px 20px 0px;
+
+  margin-top: 2px;
+  margin-bottom: 200px;
+  margin-left: 100px;
+  margin-right: 90px;
+
+        /* PADDING */
+  /* margin != padding */
+  /* margin pousse les éléments, il est en dehors */
+  /* le padding remplie les éléments, il permet d'aérer un site */
+  padding: 60px;
+
+  /* le padding fonctionne exactement comme le margin */
+
+      /* BORDER */
+  border-width: 10px;
+  border-style: solid;
+  border-color: crimson;
+
+  /* propriété racourcie */
+  border: 10px solid crimson;
+  
+  border-radius: 25px; 
+  border-radius: 5px 60px 10px 200px ;
+
+}
+
+
+/* la largeur des éléments INLINE correspond à leur contenu  */
+/* tandis que les BLOCK prennent toutes la largeur  */
+span {
+  background: green;
+  font-size: 50px;
+  
+  /* Le padding top et bottom des éléments inline ne poussent pas les autres éléments inline ou block. */
+
+
+  /* Margin top et bottom ne fonctionne pas avec les éléments inline */
+}
