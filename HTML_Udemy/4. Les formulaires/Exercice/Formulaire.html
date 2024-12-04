@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice de Formulaire</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <form>
+        <label for="name">Votre nom</label>
+        <input required maxlength="28" type="text" id="name" name="name">
+
+        <label for="phone">Numéro de téléphone</label>
+        <input required maxlength="20" type="number" id="phone" name="phone">
+
+        <label for="email">Votre email</label>
+        <input required maxlength="44" type="email" id="email" name="email">
+
+        <label for="cursus" id="label-cursus">Quel cursus voulez-vous suivre?</label>
+        <select name="option" id="cursus">
+            <option value="front-End">Front-End</option>
+            <option value="cybersecurité">Cybersecurité</option>
+            <option value="back-End">Back-End</option>
+            <option value="UX/UI">UX/UI</option>
+            <option value="full-Stack">Full-Stack</option>
+            <option value="logiciel">Logiciel</option>
+        </select>
+
+        <label for="newsletter">voulez-vous vous inscrire à la newsletter?</label>
+        <input type="checkbox" id="newsletter">
+
+        <label for="message">Un mot à nous dire ?</label>
+        <textarea name="message" id="message"></textarea>
+
+        <button>Envoyer</button>
+    </form>
+
+</body>
+</html>

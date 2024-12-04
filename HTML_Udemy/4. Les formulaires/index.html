@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Formulaires</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <!-- L'attribut Action -->
+    <!-- l'attribut action permet de lier le formulaire au serveur (back-end).Dans ce cours on ne va pas voir cette partie.
+    <form action=""> </form> 
+    -->
+   
+
+
+        <!-- l'Input -->
+    <!-- Une zone de texte réduite d'une 20e de caractères
+         les attributs de l'Input
+     Type : sert à la validation d'un champ
+     ID : permet de lier un label
+     Name : Permet de labéliser la donnée en entrée
+     Placeholder : Permet d'indiquer un message 
+     
+     Required : oblige la complétion du champs pour envoi
+     Minlength : oblige un nombre de caractère minimum  
+     Maxlength : oblige un nombre de caractère maximum
+     Autocomplete : On/Off pour activer ou non l'auto-complètion.   
+     -->
+     
+        
+                <!-- color -->
+        <input type="color">
+
+                <!-- range -->
+        <input type="range">
+
+                <!-- Date -->
+        <input type="date">
+
+                <!-- Password -->
+        <input type="password">
+
+                <!-- checkbox -->
+            <!-- les attributs de l'Input 
+            Checked : préselection la box
+            Disable : désactive la box ( grisée ) 
+            -->
+        <input type="checkbox" value="orange" name="fruit" >
+
+                <!-- radio -->
+        <input type="radio" value="orange" name="fruit">
+        <input type="radio" value="banane" name="fruit">
+        <input type="radio" value="kiwi" name="fruit">
+
+                <!-- file -->
+        <input type="file">
+
+                <!-- number -->
+        <input type="file">
+
+                <!-- select -->
+        <label for="fruits">choisissez votre fruit préféré</label>
+        <select name="fruit" id="Fruits">
+            <option value="fraise">Fraise</option>
+            <option value="pomme">Pomme</option>
+            <option value="orange">Orange</option>
+        </select>
+
+                <!-- datalist ( ⚠ attribut LIST ⚠ ) -->
+        <label for="choix-langues">choisissez la langue que vous voulez apprendre.</label>
+        <input list="langue" id="choix-langues" name="langue">
+
+        <datalist id="langue">
+            <option value="Japonais">apprendre le Japonais 2h/j</option>
+            <option value="Italien"></option>
+            <option value="Anglais"></option>
+        </datalist>
+
+        <!-- le Label -->
+    <!-- les labels permettent de saisir un texte qui va être lié à l'input pour indiquer le type de données à entrer.
+        Ne pas confondre avec le Placeholder. -->
+
+
+
+
+        <!-- le Textarea -->
+    <!-- Pour créer une zone de texte plus étendu qu'avec un <input>, et qu'on attend un vrai message -->
+
+
+
+
+        <!-- l'élément <button> -->
+    <!-- Elément important qui, lorsqu'il est placé à l'interieur d'un formulaire, permet de valider et d'envoyer les données sur les serveurs car l'attribut "type" induit est "submit".
+    Il est possible de modifier le comportement d'un bouton avec les différents "type" 
+        SUBMIT : Soumet les données du formulaire parent. Si le boutton est en dehors d'un formulaire, il n'a aucun effet.
+
+        BUTTON : Pas de comportement pas defaut. Il est utilisé par des actions personnalisés en JavaScript.
+
+        RESET  : Le bouton réinitialise tous les champs du formulaire parent à leurs valeurs initiales.
+          -->
+
+        <!-- Exemple -->
+    <form action="">
+        <label for="name">Votre nom</label>
+        <input type="text" name="name" id="name" placeholder="Veuillez saisir votre nom">
+
+        <label for="email">Votre email</label>
+        <input type="email" name="" id="email" placeholder="Entrer votre mail">
+
+        <label for="message">Votre message</label>
+        <textarea name="message" id="message"></textarea>
+
+        <button>valider votre formulaire</button>
+    </form>
+     
+
+</body>
+</html>
