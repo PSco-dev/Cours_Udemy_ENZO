@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5. La sémantique</title>
+</head>
+<body>
+
+    <!-- presque tous les contenant peuvent être une <div>. Cela ne gènerait pas le focntionnement du code mais en tant qu'expérience dévelopeur cela n'est pas une bonne pratique.
+        Il est dont important de bien employer les bonnes balises. -->
+
+            <!-- la <NAV> et <HEADER> -->
+    <!-- Pour la  création d'une navigation avec plusieurs liens on utilise la <nav> pour entourer les différents éléments.  
+        
+         On peut ensuite pour la création d'une navigation plus complexe, comme une "Hero section", entourer la <nav> ainsi que le <H1>, les buttons, images, inputs ect avec un <HEADER>   -->
+    
+
+    <!-- exemple navigation "simple" -->
+    <nav> 
+        <a href="services.html">services</a>
+        <a href="services.html">services</a>
+        <a href="services.html">services</a>
+    </nav>
+
+
+    <!-- exemple navigation plus complexe -->
+    <header>
+        <div>   
+            <img src="" alt="">
+            <nav>
+                <a href="services.html">services</a>
+                <a href="services.html">services</a>
+                <a href="services.html">services</a>
+            </nav>
+            <button></button>
+            <button></button>
+            <input type="text">
+        </div>
+        
+        <h1>Lorem ipsum dolor, sit amet consectetur.</h1>
+        <a href=""></a>
+        <a href=""></a>
+    </header>
+
+
+        <!--  <main>  -->
+    <!-- l'élément Main est purement "décoratif", il n'a pas d'interet pour le code mais sert à structurer et bien identifier les différents blocs du site.
+         On à généralement le Header -> le Main -> le Footer  -->
+         <body>
+            <header>
+            </header>
+
+            <main>
+                <section>
+                </section>
+            </main>
+
+            <footer>
+            </footer>   
+         </body>
+
+
+        <!-- Article  -->
+    <!-- L'élément HTML <article> est un conteneur sémantique utilisé pour encapsuler un contenu autonome, qui pourrait être distribué ou réutilisé indépendamment.
+        On peut refaire en son sein une structure <Header> <section> <footer>  -->
+        <article>
+            <header>
+                <h2>Carte graphique</h2>
+            </header>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione recusandae iure laboriosam impedit ut rem explicabo sed molestias neque autem?</p>
+            </section>
+            <footer>
+                <a href=""></a>
+            </footer>
+        </article>
+
+
+        <!-- aside -->
+    <!-- pour faire une navigation sur le coté. -->
+     <aside>
+        <nav>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </nav>
+     </aside>
+
+
+        <!-- le footer -->
+    <!-- Element de de fin de page sur un site pour généralement indiquer les mentions légales.
+         Le Footer est généralement très simple mais peut être parfois plus complexes.  -->
+    <footer>
+        <a href="mention.html">tous droits réservés</a>
+    </footer>
+
+
+        <!-- EM et STRONG -->
+    <em>
+    <!-- Indique qu'une portion de texte doit être mise en valeur pour montrer une insistance ou une importance contextuelle dans le contenu. -->
+     <strong>
+    <!-- Signale que le texte est d'une grande importance ou critique. -->
+
+    <!-- Vous pourriez penser que des balises comme <span> combinées avec des styles CSS suffisent (par exemple, pour rendre un texte en italique ou en gras). Cependant, utiliser <em> et <strong> transmet une signification sémantique, alors que <span> ne le fait pas. Les moteurs de recherche et les lecteurs d'écran ne reconnaissent pas l'importance d'un contenu simplement stylisé avec CSS. -->
+
+    <br>
+    <!-- ⚠ NE PAS UTILISER. On utilise le CSS pour gérer les sauts de lignes -->
+     
+</body>
+</html>
