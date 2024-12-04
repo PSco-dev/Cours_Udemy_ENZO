@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8. Validation et erreurs courantes</title>
+</head>
+<body>
+  
+
+  <!-- liste des erreurs courantes -->
+
+      <!-- une DIV dans un Paragraphe -->
+  <p>Lorem ipsum dolor, <div>sit amet consectetur adipisicing elit. Reprehenderit corporis odio exercitationem</div> quasi similique nobis.</p>
+
+
+      <!-- un lien dans un button.
+       un lien sert à aller qqu part, un button sert à executer une action -->
+  <button>
+    <a href="#">Test</a>
+  </button>
+
+
+      <!-- du texte dans un textarea est possible mais pas de d'éléments -->
+  <textarea>
+    Du texte 
+    <a href="#">Test</a>
+  </textarea>
+
+
+      <!-- Un lien dans un lien -->
+    <a href="#">
+      lien 1
+      <a href="#">Lien 2</a>
+    </a>
+
+
+    <!-- Un h1 dans un lien (mauvais) -->
+    <a href="#"><h1>Lorem ipsum dolor sit.</h1></a>
+            <!-- bonne manière -->
+             <h1><a href="#">Lorem ipsum dolor sit amet.</a></h1>
+
+
+    <!-- Pas de DIV dans une OL (mettre des LI) -->
+     <ol>
+      <div>Lorem ipsum dolor sit amet consectetur.</div>
+      <div>Lorem ipsum dolor sit amet consectetur.</div>
+      <div>Lorem ipsum dolor sit amet consectetur.</div>
+      <div>Lorem ipsum dolor sit amet consectetur.</div>
+      <li>Lorem ipsum dolor sit.</li>
+      <li>Lorem ipsum dolor sit.</li>
+      <li>Lorem ipsum dolor sit.</li>
+     </ol>
+
+</body>
+</html>

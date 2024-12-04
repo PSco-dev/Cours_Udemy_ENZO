@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6. Elements avancés</title>
+  <style>
+    canvas, svg{
+      background-color: grey;
+    }
+  </style>
+</head>
+<body>
+  
+        <!-- SVG -->
+    <img src="./icon.svg" alt="SVG manette xbox" width="10%" height="10%">
+
+    <svg
+    width="300"
+    height="200"
+    >
+      <rect x="50" y="100" width="100" height="50" fill="royalblue" />
+
+      <circle cx="150" cy="100" r="40" fill="green" />
+
+      <text x="150" y="125" font-size="60" text-anchor="middle" fill="crimson">SVG</text>
+    </svg>
+
+        <canvas></canvas>
+
+        <!-- Details  -->
+    <!-- Pour créer un petit éléments déroulant directement en HTML mais très peu utilisé car bien plus libre et poussé avec du CSS et JS -->
+  <details>
+    <summary>Titre</summary>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat delectus ipsum nemo!
+  </details>
+
+        <!-- script pour le JavaScript -->
+  <script>
+    const canvas = document.querySelector("canvas");
+    const ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = "royalblue";
+    ctx.fillRect(10,10,50, 50)
+  </script>
+</body>
+</html>
