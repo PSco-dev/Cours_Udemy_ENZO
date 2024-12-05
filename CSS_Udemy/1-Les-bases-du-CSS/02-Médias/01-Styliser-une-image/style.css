@@ -16,7 +16,7 @@ img {
    width: 450px;
    height: 450px;
 
-   /* Pour éviter ca on peut utiliser une propriété qui ca couper des éléments de l'image afin de garder de la cohérence */
+   /* Pour éviter ça on peut utiliser une propriété qui ca couper des éléments de l'image afin de garder de la cohérence */
    object-fit: cover; 
 
    /* On peut se déplacer aussi dans l'image avec : */

@@ -4,7 +4,7 @@ p {
 
         /* MARGIN */
   /* (propriétés racourcies) */
-  /* une valeur = les 4 côtés  */
+  /* 1 valeur = les 4 côtés  */
   margin: 20px;
   /* 2 valeurs = haut-bas + droite-gauche  */
   margin: 20px 20px;
@@ -47,7 +47,7 @@ span {
   font-size: 50px;
   
   /* Le padding top et bottom des éléments inline ne poussent pas les autres éléments inline ou block. */
-
+padding: 80px 10px;
 
   /* Margin top et bottom ne fonctionne pas avec les éléments inline */
 }

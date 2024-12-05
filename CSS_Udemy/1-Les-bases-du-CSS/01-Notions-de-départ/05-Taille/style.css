@@ -9,7 +9,7 @@ body {
   Un élément bloc prend l'entièreté de la largeur de son parent.
   Sa valeur de base pour width est "auto" par defaut.
 */
-/*  reponsive : ne pas mettre de valeur Width en 'absolut' afin de ne pas créer de scroll bar en bas de l'écran */
+/* ⚠ reponsive : ne pas mettre de valeur Width en 'absolut' afin de ne pas créer de scroll bar en bas de l'écran */
 
 /* mesure absolut  : exemple 500px */
 /* mesure relative : exemple 50%  */
