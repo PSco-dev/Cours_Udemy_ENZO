@@ -62,7 +62,7 @@ p{
 
 ul {
 
-    /* Permet de changer délément de déco. Même du texte est possible. */
+    /* Permet de changer l'élément de déco. Même du texte est possible. */
   list-style-type: 'Hello ';
 
   /* permet de remplacer l'élément de décoration par une image de notre choix */
