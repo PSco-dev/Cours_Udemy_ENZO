@@ -34,7 +34,7 @@ img {
   /* Propriété permettant de définir un endroit de l'image à garder en focus lors d'un changement de taille */
   background-position: center;
 
-  /* Propriété visant à garder les bonnes proportions de l'image, sans déformations. (très souvent bien à mettre)*/
+  /* Propriété visant à garder les bonnes proportions de l'image, sans déformations. (très souvent utilisé, bien à mettre)*/
   background-size: cover;
 
   /* Pour éviter qu'une image trop petite ne se répète : */
