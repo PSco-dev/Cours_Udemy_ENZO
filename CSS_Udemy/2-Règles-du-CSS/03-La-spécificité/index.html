@@ -12,7 +12,10 @@
   <!-- La spécifité : Les sélecteurs ont des "forces" différentes. -->
 
   <!-- 6. le inline !important -->
-  <h1 class="title" id="title-1">Lorem ipsum dolor sit amet.</h1>
+   <!-- le Style inline passe par dessus TOUTES les autres Forces de sélecteur SAUF sur un !important. Si par contre un !important inline passera par dessus un !important en style.css -->
+  <h1
+  style="color: chocolate;"
+  class="title" id="title-1">Lorem ipsum dolor sit amet.</h1>
 
 </body>
 </html>
