@@ -8,6 +8,26 @@ body {
   background: orange;
 }
 
+        /* :hover */
+/* Permet de donner de nouvelles propriétés à l'élément au SURVOL de la sourie */
+.card:hover{
+  background-color: steelblue;
+  width: 600px;
+  border-radius: 60px;
+}
+
+
+        /* :active */
+/* Permet de donner de nouvelles propriétés à l'élément l'orsque l'on CLIQUE sur celui-ci. */
+.card:active{
+  background-color: yellowgreen;
+}
+
+        /* :checked */
+/* modifie l'input au checked... La propriété 'accent-color' et spécifique aux input. (background-color ne fonctionnerait pas de ce cas ci */
+input:checked{
+  accent-color: red; 
+}
 
 input {
   width: 50px;
@@ -20,3 +40,13 @@ button {
   font-size: 20px;
 }
 
+        /* :focus */
+/* Permet de Garder les modifications après relachement du clic souris */
+button:focus{
+  background-color: coral;
+}
+
+a:visited{
+  color: yellow;
+  text-decoration-color: pink;
+}

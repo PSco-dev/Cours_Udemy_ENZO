@@ -3,32 +3,96 @@
 
 /* * a une spécifité de 0  */
 
-
+*, ::before, ::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 /* Par type : p, h1, form */
 
-
+h1{
+  font-size: 35px;
+  color: salmon;
+}
 
 /* Par classe / id */
 
+.title{
+  color: greenyellow;
+}
+#title{
+  color: lightskyblue;
+}
 
+/* Combinaison  
+(On évite de mettre plus de trois sélecteurs) */
 
+.title#title{
+  color: crimson;
+}
 
-/* Combinaison */
+/* Sélecteurs avancés + ~ > */
+/* + : sélectionne la 1ère Liste qui suit le H1*/
+h1 + ul{
+  background-color: blue;
+}
 
+/* > : Tous les LI qui sont les 1er enfants de UL */
+ul > li {
+  background-color: violet;
+}
 
+/* ~ : Tous les Li qui suivent le li de base */
+li ~ li{
+  background-color: goldenrod;
+}
 
-/* Sélecteurs avancés +~> */
+/* On peux également sélectionner tous les élément par exemple qui sont des <input> et qui ont l'attribut "type" avec la valeur "texte" */
+input[type="text"]{
+  background-color: red;
+}
 
+/* Ou juste en fonction de l'attribut */
+[type]{
+  background-color: green;
+}
 
-
+/* Autre selecteur utile est par exemple pour selectionner un lien qui FINI par .fr */
+a[href$=".fr"]{
+  background-color: rgba(0, 0, 255, 0.669);
+}
 
 /* Les pseudo-classes de position */
+/* selectionne */
+li:nth-child(2){
+  background: red;
+}
 
+/* on peut aussi utiliser ODD et EVEN pour selection des éléments pairs ou impairs  */
+li:nth-child(odd){
+  background: rgb(171, 35, 171);
+}
+li:nth-child(even){
+  background: rgb(21, 147, 97);
+}
 
+/* pour sélectionner seulement le premier ou le dernier de ce type  */
+li:first-of-type{
+  background: crimson;
+}
+li:last-of-type{
+  background: crimson;
+}
 
 /* :not() */
-
+/* Permet de dire : TOUS SAUF tel élément  */
+li:not(:nth-child(2)){
+  background-color: yellow;
+}
+li:not(.muted){
+  background-color: rgb(203, 40, 108);
+}
 
 
 
@@ -38,6 +102,6 @@
 
 /* Ex : Tous les h1 ET tous les h2 ET tous les paragraphes. */
 
-h1, h2, p {
+/* h1, h2, p {
   color: crimson;
-} 
+}  
