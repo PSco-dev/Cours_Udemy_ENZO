@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: sans-serif;
+  font-size: 16px;
+}
+h2{
+  padding: 15px 0;
+}
+
+.carte{
+  margin-top: 25px;
+  margin-left: 10px;
+  border-radius: 4px;
+  width: 300px;
+  height: 480px;
+  border: none;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+.bandeau-image{
+
+}
+.bandeau-texte{
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding: 0 14px 10px 10px;
+
+}
+
+.badeau-carac{
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.bandeau-button{
+  padding: 10px;
+}
+
+.btn{
+  display: inline-block;
+  padding: 7px 80px;
+  background-color: #3c31b6;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#img-laptop{
+  border-radius: 5px 5px 0 0 ;
+  width: 100%;
+}
+

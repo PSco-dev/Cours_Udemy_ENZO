@@ -8,23 +8,45 @@ body {
 .box {
   width: 150px;
   height: 150px;
+  /* valeur de base */
+  position: static;
 }
 
 .b1 {
   background-color: crimson;
+  position: relative;
+  /* position relative à la positon de base de l'élément dans le flux du document */
+  top: 50px;
+  left: 60px;
 }
 
 .b2 {
   background-color: yellowgreen;
+  position: absolute;
+  /* Sort l'élément du flux initial */
+  /* les Valeurs pour déplacer l'élément se base sur le viewport (bloc initial ). Si il n'y a PAS de parent ou que celui-ci n'est pas positionné.
+  Sinon il sera positionner par rapport à son parent et non au Viewport. */
+  top: 50px;
+  right: 0;
 }
 
 .b3 {
   background-color: skyblue;
+  position: fixed;
+  /* sort églement l'élément du flux. */
+  /* se comporte Comme 'Absolute' SAUF que celui reste fixe sur l'écran lorsque l'on scroll */
+  /* très pratique pour des NavBar ou autre */
+  top: 200px;
+  right: 0;
+
 }
 
 .b4 {
   background-color: cornsilk;
-}
+  /* permet de définir une hauteur par rapport au haut de l'écran à partir de laquelle l'élément va etre embarqué au scroll un peu à la manière de 'Fixed' */
+  position: sticky;
+  top: 0px;
+  }
 
 .b5 {
   background-color: coral;

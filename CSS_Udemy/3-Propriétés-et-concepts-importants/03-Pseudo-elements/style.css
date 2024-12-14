@@ -7,5 +7,25 @@
 h1 {
   font-size: 80px;
 }
+h1::before{
+  content:"";
+  background-color: red;
+  display: block;
+  height: 50px;
+}
+h1::after{
+  content:'';
+  display: block;
+  background-color: red;
+  height: 50px;
+}
 
-
+p::first-line{
+  background: royalblue;
+}
+p::first-letter{
+  font-size: 45px;
+}
+p::selection{
+  background: rgb(218, 157, 218);
+}

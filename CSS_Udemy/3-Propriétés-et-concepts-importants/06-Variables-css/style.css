@@ -1,0 +1,15 @@
+/* :root permet de déclarer du code comme s'il l'était dans la balise html mais avec une portée en dessous */
+/* on a prit l'habitude de déclarer les varibles dans ROOT */
+
+/* permet de déclarer des variables réutilisable plus facilement par la suite comme par exemple des palettes de couleur ou des box-shadow que l'on souhaite utiliser sur pas mal d'endroit sur le site */
+:root{
+  --primary-color: coral;
+  --text-color: #222
+}
+
+body{
+  background-color: var(--primary-color);
+}
+h1{
+  color: var(--text-color);
+}
