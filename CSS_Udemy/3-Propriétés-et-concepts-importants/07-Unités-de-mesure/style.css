@@ -21,3 +21,48 @@ body {
 }
 
 /* Contenu */
+
+.percentage{
+  /* pourcentage par rapport au parent */
+  width: 40%;
+}
+
+.pixels {
+  width: 300px;
+}
+
+.vw {
+  /* VW pour 'viewport Width' */
+  width: 100vw;
+  /* Vmin et Vmax font références aux côtés du viewport */
+  width: 40vmin;
+  width: 70vmax;
+}
+
+.vh {
+  /* VH pour 'viewport height' */
+  height: 100vh;
+}
+
+p {
+  color: #f1f1f1;
+  margin: 20px ;
+}
+
+.pixel-txt {
+  font-size: 50px;
+}
+
+.parent {
+  font-size: 20px;
+}
+
+.child {
+  /* EM est un ratio calculer par rapport au parent le plus proche. Si aucun parent n'a de valeur défini, la valeur de base est de 16px donnée par les navigateurs */
+  font-size: 2em;
+}
+
+.rem {
+  /* REM fait toujous référence à l'élément racine. Donc 16px ou à la valeur saisi dans :root ou html */
+  font-size: 2rem;
+}
