@@ -3,9 +3,10 @@
 /* Ne cache pas l'élément aux screen readers */
 
 
-/* .opacity-text {
+.opacity-text {
   background: green;
-} */
+  opacity: 0.3;
+}
 
 
 /* 2. Visibility */
@@ -14,10 +15,10 @@
 /* Ne peut plus être manipulé par l'utilisateur. */
 /* Cache l'élément aux screen readers. */
 
-/*
-.visibility-text {
 
-} */
+.visibility-text {
+ visibility: hidden;
+}
 
 
 
@@ -27,8 +28,8 @@
 /* Ne peut plus être manipulé par l'utilisateur. */
 /* Cache l'élément aux screen readers. */
 
-/* .display-text {
-
+.display-text {
+  display: none;
 }
- */
+
 

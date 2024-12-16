@@ -3,4 +3,31 @@
   padding: 20px;
   border-radius: 25px;
   margin: 0 auto;
+
+  /* Box-Shadow */
+  /* arg1 : Axe des X */
+  /* arg2 : Axe des Y */
+  /* arg3 : le flou */
+  /* arg4 : la couleur */
+  /* On peut rajouter  le mot cle 'inset' pour mettre les  ombres  vers l'interieur  */
+  box-shadow: 7px 7px 10px inset rgba(0, 0, 0, 0.3);
+}
+
+h1{
+  font-size: 50px;
+  color: #f1f1f1;
+  /* On peut utiliser plusieur shadow */
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 1);
+  text-shadow: 0 3px 1px rgba(0, 0, 0, 1);
+}
+
+
+/* ne pas confondre une Outline avec un Border */
+/* border pousse les autre elements mais pas le outline qui est utilise sur les input   */
+input{
+  outline: 1px solid black;
+}
+input:focus{
+  outline: 1px solid black;
 }
