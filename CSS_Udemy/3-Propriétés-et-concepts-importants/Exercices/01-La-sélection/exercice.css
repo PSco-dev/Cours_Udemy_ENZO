@@ -17,7 +17,7 @@
 
 /* 3. Sélectionnez tous les éléments qui contiennent la classe "txt" et tous les éléments qui contiennent la classe "article-link" en même temps, et donnez-leur la couleur "darkcyan" */
 
-.txt .article-link{
+.txt, .article-link{
   background-color: darkcyan;
 }
 
@@ -27,7 +27,9 @@
 /* 4. Sélectionnez seulement le bouton qui contient la classe "modify-btn" et qui est directement précédé par le bouton contenant la classe "delete-btn" et donnez-lui un fond "hotpink" */
 
 
-
+button.delete-btn + button.modify-btn{
+  background-color: hotpink;
+}
 
 
 
@@ -69,6 +71,10 @@ li:not(:nth-child(5)){
 /* Vous avez besoin de faire deux sélections */
 
  
+.final-txt::first-line{
+  background-color: crimson;
+}
 
-
-
+.final-txt::first-letter{
+  font-size: 50px;
+}
