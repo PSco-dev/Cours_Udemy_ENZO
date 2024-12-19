@@ -21,12 +21,55 @@ body {
   gap: 10px;
 }
 .flex-item {
-  width: 100px;
-  height: 100px;
+  /* width: 100px; */
+  /* height: 100px; */
   background: crimson;
   border-radius: 5px;
   padding: 10px;
   font-size: 35px;
   color: #f1f1f1;
   font-weight: bold;
+
+  /* si il n'y a pas de hauteur défini il y a une valeur stretch par défaut */
+  /* comportement de base s'étire sur le cross-axis */
+  align-self: stretch;
+
+  /* FLEX-GROW : permet de définir une répartition de l'espace entre les items (1 = chaque élément prend le même espace)
+  Distribue l'espace restant ( sur 0 de base)  */
+    /* flex-grow: 1; */
+
+  /* Gère le rétrécicement */
+  /* de base sur 1 */
+  flex-shrink: 1;
+  
 }
+
+             /*  deux exemples de FLEX-GROW */
+
+             /* EXEMPLE 1 */
+/* .item-1{
+  flex-grow: 1;
+}
+.item-2{
+  flex-grow: 10;
+}
+.item-3{
+  flex-grow: 1;
+} */
+
+              /* EXEMPLE 2 */
+.item-1{
+  width: 45px;
+
+  /* ORDER : pour changer l'ordre des items en eux */
+  order: 3;
+}
+.item-2{
+  width: 11000px;
+  order: 1;
+}
+.item-3{
+  flex-grow: 1.5;
+  order: 2;
+}
+

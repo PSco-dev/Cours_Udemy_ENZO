@@ -21,15 +21,16 @@ body {
   gap: 10px;
 
   /* justify-content : center, space-between, flex-end */
-
+  /* justify-content: center; */
 
   /* align-items : center, flex-end, etc... */
-
+  /* align-items: center; */
 
   /* flex-direction: column; */
+  /* flex-direction: column; */
   
-  
-  /* flex-wrap: wrap, nowrap */
+  /* flex-wrap: wrap, nowrap ( en fonction du flex-shrink) */
+  flex-wrap: wrap;
   
 
   /* flex-flow: column wrap; */
@@ -37,7 +38,7 @@ body {
 
 
   /* Gére l'écart entre les rangées/colonnes qui sont passées à la ligne */
-  /* align-content: flex-start, center, space-between  */
+  align-content: flex-start;
 }
 
 .flex-item {
@@ -49,4 +50,7 @@ body {
   font-size: 35px;
   color: #f1f1f1;
   font-weight: bold;
+  /* FLEX-SHRINK 
+  pour activer ou non le retour a la ligne si les items sortent du container (0/1)*/
+  flex-shrink: 1 ;
 }
