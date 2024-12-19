@@ -18,63 +18,140 @@ p {
 
 /* max-width = en dessous de xxx */
 
-
+@media(max-width: 1000px) {
+  .txt-1{
+    color: yellow;
+  }
+}
 
 /* min-width = au-dessus de xxx */
 
-
+@media (min-width:1000px) {
+  .txt-2{
+    color: crimson;
+  }
+}
 
 /* height */
 
-
+@media (height: 600px) {
+  .txt-1{
+    background-color: coral;
+  }
+}
 
 /* width */
 
-
+@media (width: 600px) {
+  .txt-2{
+    background-color: coral;
+  }
+}
 
 
 /* all(défaut), screen, print */
+  /* On peut ajouter des mots clés  */
 
+      /* ajouter AND après le mot clés et la valeur  */
+@media screen and (min-width:1000px){
+  .txt-2{
+    background-color: lightblue;
+  }
+}
 
-
+      /* PRINT sert à modifier la page pour une version imprimable */
+@media print {
+  .txt-2{
+    color: aquamarine;
+  }
+}
 
 /* opérateurs and, not, ",", only */
+/* AND pour créer des intervalles */
 
-
-
-
-/* and pour créer des intervalles */
+@media (min-width: 500px) and (max-width: 1000px){
+  p{
+    background-color: maroon;
+  }
+}
 
 
 
 
 /* not pour la négation */
 
+@media not (max-width: 1000px) {
+  p {
+    background-color: blue;
+  }
+}
 
 
 
 /* la virgule "," pour assembler plusieurs medias */
+/* ne pas confondre la ',' avec le AND. 
+AND = l'un ET l'autre 
+',' = l'un OU l'autre peuvent se déclencher indépandemment. C'est un assemblage mais pas des condition à respester en global */
 
+@media (min-width: 500px), (max-width: 1000px) {
+  p {
+    background-color: chartreuse;
+  }
+}
+ 
 
 
 
 /* Seulement quand hover est supporté, pas en mode mobile */
+
+@media (hover: hover) {
+  p:hover{
+    background-color: yellow;
+  }
+}
 
 
 
 
 /* prefers-color-scheme pour le dark / light mode*/
 
-
+@media (prefers-color-shem: dark) {
+  body {
+    background-color: #222;
+    color: #f1f1f1!important;
+  }
+}
 
 
 
 /* coarse = grossier = petit écran(doigt) */
 
+     /* COARSE pour le doigt ( téléphone )  */
+@media (pointer:coarse){
+  body {
+    background-color: goldenrod;
+  }
+}
 
+     /* FINE pour la souris ( pc )   */
+@media (pointer:fine){
+  body {
+    background-color: green;
+  }
+}
 
 
 
 /* Orientation du téléphone / Tablette */
 
+@media (orientation: landscape){
+  body{
+    background-color: cornsilk;
+  }
+}
 
+@media (orientation: portrait){
+  body{
+    background-color: cornflowerblue;
+  }
+}

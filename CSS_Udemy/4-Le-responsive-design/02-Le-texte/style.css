@@ -1,0 +1,54 @@
+
+
+h1 {
+  /* valeur relative : vw */
+  font-size: 5vw;
+      /* permet de jumeler des valeurs pour avoir une différence plus lisse  */
+  font-size: calc(2vw + 30px);
+
+
+
+/* - CLAMP - 
+valeur 1 : val min
+valeur 2 : val préférée 
+valeur 3 : val max */
+/* Nouvelle fonction qui est très utile  */
+font-size: clamp(30px, 5vw, 50px);
+
+/* min */
+      /* Choisi la valeur la plus petit en focntion de la taille de l'écran */
+font-size: min(5vw, 50px);
+
+/* max */
+font-size: max(5vw, 5px);
+}
+
+
+/* Technique de l'éscalier */
+    /* le plus utilisé et à privilégier */
+    /* En général il faut que le site soit utilisable jusqu'a 320px de largeur */
+
+h1 {
+  font-size: 65px;
+}
+
+
+@media (maw-width:1000px) {
+  h1 {
+    font-size: 45px;
+  }
+}
+
+
+@media (maw-width:700px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+
+
+@media (maw-width:500px) {
+  h1 {
+    font-size: 25px;
+  }
+}
