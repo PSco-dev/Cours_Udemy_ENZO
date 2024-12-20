@@ -24,3 +24,12 @@ body {
   font-weight: 900;
   color: #f1f1f1;
 }
+
+
+      /* Pour placer des elements dans la grille */
+.item-1{
+  grid-row-start: ;
+  grid-row-end: ;
+  grid-column-start: ;
+  grid-column-end: ;
+}
