@@ -11,3 +11,10 @@ body {
   padding: 140px 0 100px;
 }
 
+.gallery{
+  /* width: 1100px;
+  margin: 0, auto; */
+  display: grid;
+  grid-column: repeat(4, 275px);
+  grid-template-columns: repeat(auto-fit, 275px);
+}
